@@ -1,0 +1,138 @@
+﻿@model Lofter3._0.Models.LoginModel
+
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lofter</title>
+	<meta content="text/html; charset=UTF-8">
+	<meta name="author" content="杨妍喆">
+	<meta name="keyword" content="轻博客站，lofter，程设大作业">
+	<meta name="version" content="1.0">
+	<script type="text/javascript" src="~/Scripts/jquery.js"></script>
+	<script type="text/javascript" src="~/Scripts/login.js"></script>
+	<link type="text/css" href="~/Css/login_layout.css" rel="stylesheet"/>
+	<link href="img/shortcut.ico" rel="~/Images/shortcut icon" type="image/x-icon" />
+</head>
+
+<body>
+	<!-logo部分->
+	<div class="logo">
+	</div>
+
+	<!-注册框->
+	<div class="region">
+		<!-注册、登陆、下载栏->
+		<div class="optionWrap">
+			<a id="registerBt" class="active">注册</a>
+			<a id="loginBt" class="normal">登录</a>
+			<a id="downloadBt" class="normal" style="display:none;">下载APP</a>
+		</div>
+
+		<!-三窗口->
+		<div class="formWrap">
+
+			<!-新用户注册窗口->
+			<div id="newRegister" class="m-register">
+				<div class="formContent">
+					<div class="leftPart">
+						<form>
+							<ul class="user">
+								<li>
+									<div class="input">
+										<label id="label101">常用邮箱 / 网易通行证</label>
+										<input tabindex="101" type="text" class="txt">
+									</div>
+								</li>
+								<li>
+									<div class="input">
+										<label id="label102">设置密码</label>
+										<input tabindex="102" type="password" class="txt">
+									</div>
+									<div class="warn" id="warn102" style="display:none;">
+											<span class="wrongIcon">&nbsp;</span>
+											<span>请输入6-16个字符的密码</span>
+									</div>
+								</li>
+								<li>
+									<div class="input">
+										<label id="label103">验证码</label>
+										<input tabindex="103" type="text" class="txt">
+										<!-验证码图片->
+										<a href="javascript:void(0)" hidefocus="true" class="validate">
+											<img width="80" height="32" src="http://www.lofter.com/cap/captcha.jpgx?h=32&amp;w=80">
+											<span class="icn"></span>
+										</a>
+									</div>
+								</li>
+								<li>
+									<button tabindex="104" type="submit" class="m-button"><span>注  册</span></button>
+								</li>
+							</ul>
+						</form>
+					</div>
+
+					<div class="rightPart">
+						<div class="others">
+							<span class="sepln"></span>
+							<img src="~/Images/admin_register.jpg" class="img">
+						</div>
+					</div>
+				</div>
+			</div> 	<!-m-register结束->
+
+			<!-用户登陆窗口->
+			<div id="newLogin" class="m-login" style="display: none;">
+				<div class="formContent">
+					<div class="leftPart">
+						<form>
+							<ul class="user">
+								<li>
+									<div class="input">
+										<label id="label201">常用邮箱 / 网易通行证</label>
+										<input tabindex="201" type="text" class="txt">
+									</div>
+								</li>
+								<li>
+									<div class="input">
+										<label id="label202">密码</label>
+										<input tabindex="202" type="password" class="txt">
+									</div>
+									<span class="warn" style="display:none;">
+											<span class="wrongIcon">&nbsp;</span>
+											<span>密码错误</span>
+									</span>
+								</li>
+								<li>
+									<button tabindex="203" type="submit" class="m-button"><span>登陆</span></button>
+								</li>
+
+								<li class="loginHint">
+									<span class="checkBox">
+										<span class="ok">
+											<input id="c0" type="checkbox">
+										</span>
+										<span>记住密码</span>
+									</span>
+									<span class="forget" href="" target="_blank">忘记密码</span>
+								</li>
+							</ul>
+						</form>
+					</div>
+					<div class="rightPart">
+						<div class="others">
+							<span class="sepln"></span>
+							<img src="~/Images/admin_register.jpg" class="img">
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div> 
+	</div>
+	
+</body>
+</html>

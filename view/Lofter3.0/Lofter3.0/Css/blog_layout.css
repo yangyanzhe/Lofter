@@ -1,0 +1,346 @@
+/****************************************************
+**	login_layout.css
+**	time: 7/19;
+**	function: 登陆界面的布局显示;
+*****************************************************/
+.clearfix:after{
+	visibility: hidden;
+	display: block;
+	content:" ";
+	clear:both;
+	height: 0;
+}
+
+.clearfix{zoom:1;}
+
+body{
+	padding: 0;
+	margin: 0;
+	background: #ededef;
+}
+
+.blog-content{
+	width: 68%;
+	height: 1000px;
+	margin: 120px 27px 27px 27px;
+	padding: 0px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/***********************标题栏**************************/
+
+#nav{
+	position: fixed;
+	top: 0;
+	z-index: 50;
+	background: #24292c;
+	border-bottom: 1px solid #f1f1f1;
+	left: 0;
+	right: 0;
+}
+
+/*参考了google的标题设计*/
+#nav.maximum{
+	border-color: #f1f1f1;
+	height: 60px;
+	padding-top: 18px;
+	padding-bottom: 3px;
+	box-shadow: 0 0 8px rgba(0,0,0,0.2);
+	transition: padding 0.25s ease;
+	-moz-transition: padding 0.25s ease;
+	-webkit-transition: padding 0.25s ease;
+}
+
+#nav.minimum {
+	border-color: #bbb;
+	padding-top: 12px;
+	padding-bottom: 3px;
+	box-shadow: 0 0 8px rgba(0,0,0,0.1);
+	height: 50px;
+	transition: padding 0.25s ease;
+	-moz-transition: padding 0.25s ease;
+	-webkit-transition: padding 0.25s ease;
+}
+
+
+#logo{
+	float: left;
+	height: 100%;
+	width: 250px;
+
+	margin-left: 215px;
+	margin-right: 30px;
+	
+	background: url("/img/hd24.png") no-repeat 999px 999px;
+	background-position: 0 0;
+}
+
+#topbar{
+	color: #fff;
+	font-family: "微软雅黑";
+	font-size: 18px;
+	text-align: center;
+	float: left;
+	height: 60px;
+	width: 300px;
+	margin-top: 15px;
+	margin-left: 30px;
+}
+
+#topbar span{
+	margin-left: 40px;
+	cursor: pointer;
+}
+
+/****************************搜索框*********************/
+#nav .searchBox{
+	float: right;
+	position: relative;
+	width: 184px;
+	height: 26px;
+
+	margin-top: 15px;
+	margin-right: 210px;
+	padding: 2px 10px 2px 32px;
+	top: -1px;
+	left: -2px;
+	
+	z-index: 65;
+	background: url("/img/icon1.png") -9999px -9999px no-repeat;
+	background-position: 0 -41px;
+}
+
+.searchBox .search{
+	background-color: #000;
+	display: block;
+}
+
+.searchBox .searchBt{
+	display: block;
+	position: absolute;
+	top: 6px;
+	left: 10px;
+	width: 18px;
+	height: 18px;
+	
+	
+	background: url("/img/icon1.png") -9999px -9999px no-repeat;
+	background-position: 0 -81px;
+}
+
+.searchBox input{
+	padding: 4px 45px 2px 0;
+	margin: 0;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	
+	position: relative;
+	width: 144px;
+	height: 18px;
+	line-height: 18px;
+	color: #fff;
+
+	z-index: 3;
+}
+
+/**********************内容部分*************************/
+.blog-content .blogLeft{
+	width: 72%;
+	height: 100%;
+	float: left;
+}
+
+.blog-content .blogRight{
+	width: 24%;
+	height: 100%;
+	border: dotted;
+	float: right;
+}
+
+.blogLeft .blogLeftBar{
+	width: 100%;
+	height: 114px;
+	background: url("/img/nav224.png") no-repeat 999px 999px;
+	background-position: 0 0;
+	cursor: pointer;
+}
+
+.blogLeft .blogList{
+	margin-top: 22px;
+	width: 100%;
+	height: 800px;
+}
+
+
+/************************每条小评论********************/
+.mList{
+	width: 100%;
+	margin: 0;
+}
+
+.mList .mListImg{
+	width: 70px;
+	height: 70px;
+	float: left;
+}
+
+.headImg{
+	width: 70px;
+	height: 70px;
+	box-shadow: 0 0 8px rgba(0,0,0,0.4);
+}
+
+.mList .isay{
+	width: 565px;
+	margin-left: 93px;
+	margin-right: 0px;
+	padding: 0px;
+}
+
+.isay a{
+	text-decoration: none;
+}
+
+/**小评论的标题栏**/
+.mList .isayTitle{
+	height: 24px;
+	overflow: hidden;
+	background-position: 0 0;
+	background: url("/img/isay24.png") no-repeat;
+}
+
+.isayt .isayc{
+
+}
+
+/**小评论的正文**/
+.mList .isayMain{
+	padding-left: 50px;
+	zoom: 1;
+	background: url("/img/isay24.png") no-repeat;
+	background-repeat: repeat-y;
+	background-position: -1015px 0;
+	font-family: "微软雅黑";
+	padding-bottom: 25px;
+}
+
+
+/**正文中的who部分**/
+.isayMain .who{
+	position: relative;
+	zoom: 1;
+	margin: 0 0 16px;
+	font-size: 16px;
+	line-height: 19px;
+	color: #888;
+}
+
+.who a{
+	color: #888;
+}
+
+/**正文中的intro部分**/
+.isayMain .intro{
+	color: #444444;
+}
+
+.intro .img{
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+
+.img .isayImg{
+	width: 200px;
+	height: 200px;
+}
+
+.intro .txt{
+	word-wrap: normal|break-word;
+	line-height: 1.6;
+	font-size: 14px;
+	margin-right: 20px;
+}
+
+.txt .title{
+	color: black;
+	font-weight: bold;
+}
+
+.txt .title a{
+	color: black;
+}
+
+#plusIcon{
+	display: inline-block;
+	position: relative;
+	top: 1px;
+	margin: 0 0 0 5px;
+	-webkit-transition: width 0.3s,margin-left 0.3s, opacity 0.3s;
+	width: 12px;
+	height: 12px;
+	background: url("/img/icon2.png");
+	background-position: -88px -1973px;
+}
+
+/**正文中的more部分**/
+.isayMain .more{
+	margin: 16px 0;
+}
+
+.isayMain .more a{
+	font-size: 12px;
+	color: #888;
+	padding-right: 16px;
+	background: url("/img/icon24.png") no-repeat 999px 999px;
+	background-position: right -2617px;
+}
+
+.isayMain .option{
+	color: #aaa;
+	font-size: 12px;
+	line-height: 19px;
+	margin-bottom: 40px;
+}
+
+.isayMain .option span{
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+.isayMain .option .tag{
+	background: url("/img/icon24.png") no-repeat;
+	background-position: 0 -103px;
+	float: left;
+}
+
+.isayMain .option .optionRight{
+	float: right;
+	margin-right: 20px;
+	display: inline;
+}
+
+.optionRight .loveIcon{
+	background: url("/img/icon24.png") no-repeat;
+	background-position: -82px -2759px;
+	width: 20px;
+	height: 18px;
+}
+
+/***********************右侧栏部分*******************/
+.blogRight .menu{
+	background: url("/img/menu24.png");
+	background-position: -246px 0;
+	background-repeat: repeat-y;
+
+	width: 100%;
+}
+
+.menu a{
+	text-decoration: none;
+	font-family: "微软雅黑", arial;
+}

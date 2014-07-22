@@ -1,0 +1,257 @@
+﻿/****************************************************
+**	login_layout.css
+**	time: 7/19;
+**	function: 登陆界面的布局显示;
+*****************************************************/
+
+body {
+	background-image: url("../Images/login_background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: 0;
+	overflow: hidden;
+	font-family: "微软雅黑";
+}
+
+ul{
+	display: block;
+	list-style-type: disc;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 40px;
+}
+
+li{
+	list-style: none;
+	display: list-item;
+	text-align: -webkit-match-parent;
+}
+
+/***************logo部分****************************/
+
+.logo{
+	width: 380px;
+	margin-top: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 25px;
+	height:130px;
+	background: url("../Images/btn.png") no-repeat;
+	overflow: hidden
+}
+
+.region {
+   	margin: 0 auto;
+    width: 582px;
+    overflow: hidden;
+}
+
+/***********************选择栏部分*********************/
+
+.optionWrap{
+	width: 600px;
+    height: 56px;
+}
+
+.optionWrap a{
+    float: left;
+    width: 291px;
+    height: 56px;
+    text-align: center;
+    font-size: 18px;
+    font-family: "微软雅黑";
+    letter-spacing: 4px;
+    line-height: 56px;
+    cursor: pointer;
+}
+
+.optionWrap .normal:hover{
+	color: #fff;
+}
+
+.normal{
+	background-color: rgba(17, 17, 17, 0.6);
+    color: #fff;
+    color: rgba(255,255,255,0.5);
+    border-right: 1px solid #525252;
+}
+
+.active{
+	background-color: #fff;
+	color: #111;
+    border-right: 1px solid #525252;
+}
+
+/*********************************内容表部分**************************/
+
+.formWrap{
+    width: 562px;
+    height: 200px;		/*当显示warn box时添加30px*/
+    background: #fff;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: #888;
+}
+
+.m-register, .m-login, .m-download{
+	width: 100%;
+	height: 100%;
+}
+
+.input{
+	position: relative;
+	zoom: 1;
+	padding: 8px 16px;
+	border: 1px solid #d7d7d7;
+	width: 266px;
+	height: 22px;		
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.m-button{
+	margin-top: 20px;
+	cursor: pointer;
+	background: #8db800;
+	display: inline-block;
+	border: 0;
+	width: 300px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 18px;
+	color: #fff;
+}
+
+.m-button:hover{
+	background: #aed505;
+}
+
+.user .txt{
+	border: 0;
+	outline: none;
+	color: #444;
+	width: 266px;
+	height: 22px;
+	font-size: 14px;
+	line-height: 22px;
+	z-index:2;
+	background: url("../Images/empty.png");
+}
+
+.user li{
+	width: 300px;
+}
+
+.user label, .user .txt{
+	position: absolute;
+	left: 16px;
+	top: 8px;
+}
+
+.user label{
+	z-index:1;
+}
+
+.validate{
+	position: absolute;
+	right: 0;
+	top: 3px;
+	width: 90px;
+	height: 30px;
+	line-height: 30px;
+}
+
+/*警告消息*/
+.warn{
+	margin-top: 5px;
+	height: 30px;
+	width: 300px;
+	font-size: 14px;
+}
+
+.wrongIcon{
+	display: inline-block;
+	width: 21px;
+	height: 21px;
+	margin: 0 4px 0 0;
+	background: url("../Images/btn.png") no-repeat -353px -783px;
+}
+
+.m-register .rightPart,.m-login .rightPart{
+	float: right;
+	width: 200px;
+}
+
+.m-register .leftPart, .m-login .leftPart{
+	float: left;
+	width: 360px;
+}
+
+.formContent .rightPart .others{
+	position: relative;
+	zoom: 1;
+}
+
+.others .sepln{
+	position: absolute;
+	display: block;
+	top: 10px;
+	height: 130px;
+	width: 1px;
+	background: #e7e7e7;
+}
+
+
+.others .img{
+	width: 200px;
+	height: 180px;
+}
+
+
+.loginHint{
+	margin: 10px 0 0;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.checkBox{
+	
+}
+
+.forget{
+	float: right;
+}
+
+.checkBox .no{
+	background: url("../Images/btn.png") no-repeat -999px -999px;
+	top: 0;
+	left: 0;
+	width: 16px;
+	height: 16px;
+	background-position: -473px -783px;
+}
+
+.checkBox .ok{
+	background: url("../Images/btn.png") no-repeat -999px -999px;
+	top: 0;
+	left: 0;
+	width: 16px;
+	height: 16px;
+	background-position: -499px -783px;
+}
+
+#c0{
+	visibility: hidden;
+	-webkit-appearance: checkbox;
+	box-sizing: border-box;
+}
